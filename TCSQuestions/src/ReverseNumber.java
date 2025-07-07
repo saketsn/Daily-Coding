@@ -10,7 +10,7 @@ public class ReverseNumber {
         reversed = reversed * 10 + remainder;
         return reverseNumber(number / 10, reversed);
     }
-
+    //public static int count =0;
     public static int countZero(int number, int count){
         if(number == 0) {
             return count;

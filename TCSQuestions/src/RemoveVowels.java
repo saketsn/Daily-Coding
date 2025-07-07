@@ -11,6 +11,7 @@ public class RemoveVowels {
 
         System.out.println(reVowels(str));
         System.out.println(reSpace(str));
+        System.out.println(reString(str));
     }
 
     static String reVowels(String str){
@@ -39,4 +40,14 @@ public class RemoveVowels {
         }
         return sb.toString();
     }
+
+    static String reString(String str){
+        StringBuffer sb = new StringBuffer();
+
+        for(int i= str.length()-1; i>=0; i--){
+            sb.append(str.charAt(i));
+        }
+        return  sb.toString();
+    }
+
 }

@@ -43,6 +43,9 @@ public class Main {
         binaryTree.InOrder(binaryTree.root);
         System.out.println();
         binaryTree.PostOrder(binaryTree.root);
+        System.out.println();
+
+        binaryTree.levelOrder();
 
     }
 }

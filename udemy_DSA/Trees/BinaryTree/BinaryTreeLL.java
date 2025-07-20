@@ -57,6 +57,26 @@ public class BinaryTreeLL {
         }
     }
 
+    // Search Method
+    public void search(String value){
+        Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            BinaryNode presentNode = queue.remove();
+            if(presentNode.value == value){
+                System.out.println("The vlaue " +value+" is found in Tree");
+                return;
+            }else{
+                if(presentNode.left!= null){
+                    queue.add(presentNode.left);
+                }
+                if(presentNode.right!= null){
+                    queue.add(presentNode.right);
+                }
+            }
+        }
+        System.out.println("The value is not found");
+    }
 
 
 

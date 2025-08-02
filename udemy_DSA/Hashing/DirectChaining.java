@@ -22,7 +22,21 @@ public class DirectChaining {
 
     public void insertHashTable(String word){
         int newIndex = modASCIIHashFunction(word, hashTable.length);
+        if(hashTable[newIndex] == null){
+            hashTable[newIndex] = new LinkedList<String>();
+            hashTable[newIndex].add(word);
+        }else{
+            hashTable[newIndex].add(word);
+        }
+    }
 
+    public void displayHashTable(){
+        if(hashTable != null){
+            System.out.println("\n HashTable does not exits.");
+            for(int i=0; i<hashTable.length; i++){
+                System.out.println("Index " + i + ", key: " + hashTable[i]);
+            }
+        }
     }
 
 }

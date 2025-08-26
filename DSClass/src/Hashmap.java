@@ -2,7 +2,7 @@ package DSClass.src;
 
 import java.util.HashMap;
 
-public class hashmap {
+public class Hashmap {
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>();
 

@@ -1,3 +1,51 @@
+/*
+Problem: Count Elements Within a Difference
+
+Function Signature:
+
+int findCount(int arr[], int length, int num, int diff);
+
+
+Description:
+You are given an integer array arr of size length, an integer num, and an integer diff.
+Write a function to count the number of elements in arr whose absolute difference with num is less than or equal to diff.
+
+If no such element exists, the function should return -1.
+
+Input:
+
+arr[] → an array of integers
+
+length → the number of elements in arr
+
+num → the reference number
+
+diff → maximum allowed difference
+
+Output:
+
+An integer representing the count of elements in arr satisfying the condition, or -1 if none exist.
+
+Example:
+
+Input:
+
+arr  = {12, 3, 14, 56, 77, 13}
+num  = 13
+diff = 2
+
+
+Output:
+
+3
+
+
+Explanation:
+The elements of arr having absolute difference ≤ 2 with num = 13 are:
+12 (|12-13|=1), 14 (|14-13|=1), 13 (|13-13|=0)
+Hence, the count is 3.
+ */
+
 package AccentureQuestion.src;
 
 import java.util.Scanner;

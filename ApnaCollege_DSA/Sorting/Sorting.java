@@ -45,7 +45,7 @@ public class Sorting {
 
     }
 
-    //Insertion Sort
+    // Bucket sort
     public static void insertionSort(int[] arr){
         int n = arr.length;
     }

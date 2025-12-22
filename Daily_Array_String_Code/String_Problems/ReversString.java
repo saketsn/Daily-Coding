@@ -2,7 +2,7 @@
 Reverse a string without using built-in functions
 
  */
-package Daily_Array_String_Code;
+package Daily_Array_String_Code.String_Problems;
 
 
 import java.util.Scanner;
